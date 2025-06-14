@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Y camelCase</title>
+    <link rel="stylesheet" href="estilos.css"/>
+<!--
+Sección de introducción:  
+o Título principal 
+o Breve explicación del propósito de la página 
+2. Sección sobre BEM:  
+o Título de sección 
+o Explicación de qué es BEM (Block Element Modifier) 
+o Lista ordenada de las ventajas de usar BEM 
+o Lista desordenada de ejemplos de código usando BEM
+///-->
+</head>
+
+<body>
+    <main class="container">
+      <!-- Título -->
+      <header>
+        <h1 id="principal">
+Investigación y aplicación de metodologías BEM y camelCase </h1>
+        <p class="parrafo">
+      Esta página web fue diseñada como un proyecto informativo para explicar y comparar dos metodologías de nombrado muy utilizadas en desarrollo web: BEM y camelCase. A través de secciones claras, listas y ejemplos prácticos en HTML, CSS y JavaScript
+        </p>
+      </header>
+      <!-- BEM -->
+<section class="bem">
+  <h2 class="subtitulo">BEM</h2>
+
+  <h3>¿Qué es BEM?</h3>
+  <p>
+    BEM (Bloque, Elemento, Modificador) es una metodología para nombrar clases en CSS.
+    Su objetivo es organizar el código de forma más clara, ordenada y fácil de mantener.
+    Gracias a su estructura, es especialmente útil en proyectos grandes o en trabajo en equipo.
+  </p>
+
+  <!-- Lista Ordenada -->
+  <h3>Ventajas de usar BEM</h3>
+  <ol>
+    <li>Hace que el código HTML y CSS sea más fácil de leer y entender.</li>
+    <li>Reduce conflictos entre estilos al mantener cada clase en su propio contexto.</li>
+    <li>Fomenta la creación de componentes reutilizables y modulares.</li>
+    <li>Facilita el mantenimiento y crecimiento del proyecto con el tiempo.</li>
+    <li>Ayuda a que todo el equipo use la misma convención de nombres.</li>
+  </ol>
+
+  <!-- Lista Desordenada -->
+ <!-- Lista Desordenada -->
+<h3>Ejemplos de código usando BEM</h3>
+<ul>
+  <li><code>tarjeta</code>: Bloque principal para una tarjeta de contenido.</li>
+  <li><code>tarjeta__imagen</code>: Elemento que representa la imagen dentro de la tarjeta.</li>
+  <li><code>tarjeta__imagen--grande</code>: Modificador que indica una versión más grande de la imagen.</li>
+  <li><code>formulario__campo</code>: Elemento que representa un campo dentro del formulario.</li>
+  <li><code>formulario__campo--invalido</code>: Modificador que marca el campo como con error.</li>
+</ul>
+
+</section>
+       <!-- Sección camelCase -->
+      <section class="case">
+        <h2 class="subtitulo">camelCase</h2>
+        <!-- Explicación -->
+        <h3>Explicación de qué es camelCase </h3>
+        <p>
+          camelCase es una forma de escribir palabras juntas sin espacios, donde la primera palabra empieza en minúscula y cada palabra siguiente comienza con mayúscula, como las jorobas de un camello.</p>
+        <h4>Por ejemplo</h4>
+          <p>nombreUsuario</p>
+          <p>calcularEdad</p>
+          <p>listaDeProductos</p>
+       
+        <h4>¿Para que se usa?</h4>
+        <p>Se usa principalmente en programación para nombrar variables, funciones, objetos y métodos, porque hace que los nombres sean fáciles de leer y entender.</p>
+        <h4>¿Por qué es util?</h4>
+     <p>Evita espacios o caracteres especiales en los nombres.</p>
+<p>Hace que los nombres largos sean más claros y legibles.</p>
+<p>Es una convención muy común y ayuda a que el código sea consistente.</p>
+
+     <!-- Lista Ordenada -->
+<h3>Lista ordenada de situaciones donde se usa camelCase </h3>
+<ol>
+  <li>
+    <code>let nombreUsuario = "Edwin";</code> — <strong>Variable</strong>
+  </li>
+  <li>
+    <code>function calcularTotal() { }</code> — <strong>Función</strong>
+  </li>
+  <li>
+    <code>persona.calcularPrecio();</code> — <strong>Método de objeto</strong>
+  </li>
+  <li>
+    <code>producto.precioTotal</code> — <strong>Propiedad de objeto</strong>
+  </li>
+  <li>
+    <code>const listaDeCompras = [];</code> — <strong>Variable (estructura de datos)</strong>
+  </li>
+</ol>
+
+<!-- Lista Desordenada -->
+<h3>Lista desordenada de ejemplos de código usando camelCase</h3>
+<ul>
+  <li><code>let nombreCompleto = "Edwin Zenozain";</code> — <strong>Variable</strong></li>
+  <li><code>const productosEnCarrito = 2;</code> — <strong>Variable</strong></li>
+  <li><code>function mostrarMensajePersonalizado() { }</code> — <strong>Función</strong></li>
+  <li><code>const productosEnCarrito = ["producto1", "producto2"];</code> — <strong>Variable (array)</strong></li>
+  <li><code>usuario.obtenerDatos();</code> — <strong>Método de objeto</strong></li>
+</ul>
+      </section>
+
+      <!-- TABLA COMPARATIVA -->
+      <section class="comparacion">
+        <h2>Tabla comparativa de BEM y camelCase </h2>
+        <table class="comparativa">
+          <thead>
+            <tr>
+              <th> CARACTERISTICAS   </th>
+              <th>BEM</th>
+              <th>camelCase</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ESTILO DE ESCRITURA</td>
+              <td>Palabras separadas por guiones bajos (_) y dobles guiones (--)</td>
+              <td>Palabras unidas sin espacios, con mayúscula inicial en cada nueva palabra</td>
+            </tr>
+            <tr>
+              <td>ENFOQUE</td>
+              <td>Usa una estructura clara con partes definidas</td>
+              <td>Es más libre y flexible, sin seguir una estructura fija.</td>
+            </tr>
+            <tr>
+              <td>Legibilidad</td>
+              <td>Muy alta: indica relaciones entre elementos</td>
+              <td>Buena, aunque puede dificultar jerarquías complejas</td>
+            </tr>
+            <tr>
+              <td>ESCALABILIDAD</td>
+              <td>MExcelente para proyectos grandes y equipos</td>
+              <td>Adecuado para proyectos pequeños o medianos</td>
+            </tr>
+            <tr>
+              <td>REUTILIZACION DE ESTILOS</td>
+              <td>Alta reutilización gracias a la estructura clara</td>
+              <td> Moderada,debido a que depende del orden del código</td>
+            </tr>
+            <tr>
+              <td>Ejemplos</td>
+              <td><code>boton__icono--activo</code></td>
+              <td><code>.botonIconoActivo</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+          <!-- CUANDO USAR CADA METODOLOGIA -->
+      <section class="metodologia">
+       <h3 class="metodologia__titulo">¿En qué casos conviene usar BEM o camelCase?</h3>
+
+        <p>El enfoque <strong>BEM</strong> es ideal para el desarrollo de <strong>interfaces web en HTML y CSS</strong>, sobre todo en situaciones como:</p>
+
+        <ul class="metodologia__lista">
+        <li>Proyectos donde es importante mantener una estructura visual clara y modular.</li>
+        <li>Cuando se busca evitar conflictos entre clases CSS similares o duplicadas.</li>
+        <li>Entornos colaborativos donde varios desarrolladores trabajan sobre los mismos archivos.</li>
+        <li>Casos donde se necesita mantener un código escalable, reutilizable y fácil de depurar.</li>
+        </ul>
+
+        <p>Por otro lado, el estilo <strong>camelCase</strong> es más común en <strong>JavaScript y otros lenguajes de programación</strong>, y suele aplicarse principalmente en:</p>
+
+        <ol>
+        <li>Nombres de variables y constantes (por ejemplo: <code>totalPrecio</code>).</li>
+        <li>Funciones o métodos que representan acciones (por ejemplo: <code>calcularTotal()</code>).</li>
+        <li>Propiedades de objetos y nombres de eventos personalizados.</li>
+        <li>Proyectos donde se combina JavaScript con frameworks como React o Vue.</li>
+        </ol>
+       <!-- Ejemplo actualizado usando BEM -->
+ 
+ <pre><code>&lt;div class="perfil perfil--activo"&gt;
+ &lt;h2 class="perfil__nombre"&gt;Edwin Zenozain&lt;/h2&gt;
+ &lt;p class="perfil__biografia"&gt;Estudiante apasionado por el desarrollo web.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+<p>
+<p>Utiliza <strong>camelCase</strong> cuando trabajes con 
+<strong>JavaScript</strong>, especialmente en:</p>
+
+<ol>
+  <li>Nombres de variables que almacenan datos.</li>
+  <li>Funciones que realizan acciones o cálculos.</li>
+  <li>Propiedades y métodos dentro de objetos.</li>
+</ol>
+
+<pre><code>1-variable que almacena un dato
+    let usuarioActivo = "Lucía";
+  function obtenerEdadActual(anioNacimiento) {
+    return 2025 - anioNacimiento;
+  }
+
+  2-funcion que realiza un calculo y devuelve un resultado
+  const productosEnCarrito = ["laptop", "mouse", "teclado"];
+
+  3-objeto con propiedades y metodos
+  const perfilUsuario = {
+    nombreCompleto: "Lucía Ramírez",
+    correoElectronico: "lucia@mail.com",
+    iniciarSesion: function() {
+      console.log("Sesión iniciada");
+    }
+  };</code></pre>
+
+      </section>
+<!--EJEMPLO VISUAL-->
+<section class="practica">
+        <h3 class="ejemplo__titulo"> Ejemplo visual de BEM </h3>
+        <div class="ejemplo">
+          <p class="ejemplo__texto">
+             Se adjunta el enlace de la documentacion revisada.
+          </p>
+          <a
+            href="https://www.arsys.es/blog/bem-guia-completa-para-css-modular-con-ejemplos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ejemplo__boton ejemplo__boton--activo"
+          >
+            Click Aquí
+          </a>
+        </div>
+      </section>
+      <section class="tarjeta tarjeta--destacada">
+  <h2 class="tarjeta__titulo">Curso de CSS</h2>
+  <p class="tarjeta__descripcion">Aprende a usar BEM con estilo y claridad.</p>
+</section>
+
+      <!-- Pie de Página -->
+      <footer class="pie__pagina">
+        <p class="pie__texto">
+          © 2025 -Información basada en recursos web como
+          <a class="pie__a" href="https://www.arsys.es/blog/bem-guia-completa-para-css-modular-con-ejemplos" target="_blank"> BEM </a>
+          /
+          <a class="pie__a" href="https://www.aluracursos.com/blog/convenciones-de-nomenclatura-camel-pascal-kebab-snake-case" target="_blank">camelCase </a>.
+        </p>
+      </footer>
+</body>
+</html>
